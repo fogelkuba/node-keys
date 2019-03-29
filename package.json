@@ -1,0 +1,22 @@
+{
+  "name": "nodeinput",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodeInput.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fogelkuba/node-keys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fogelkuba/node-keys/issues"
+  },
+  "homepage": "https://github.com/fogelkuba/node-keys#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2"
+  }
+}

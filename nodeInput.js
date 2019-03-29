@@ -3,7 +3,7 @@ const readline = require('readline').createInterface({
     output: process.stdout
 })
 
-readline.question(`What's your name?`, (toCode) => {
+readline.question(`What to code? `, (toCode) => {
     init(toCode)
     readline.close()
 })

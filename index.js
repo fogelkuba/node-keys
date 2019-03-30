@@ -11,10 +11,26 @@ inquirer
         },
         {
             type: 'input',
-            name: 'textToCode',
+            name: 'codeText',
             message: 'What text do you want to code?',
             when: function (answers) {
-                answers.actionType === 'code'
+                return answers.actionType == 'code'
+            }
+        },
+        {
+            type: 'input',
+            name: 'decodeText',
+            message: 'Enter text to decode?',
+            when: function (answers) {
+                return answers.actionType == 'decode'
+            }
+        },
+        {
+            type: 'input',
+            name: 'decodeKey',
+            message: 'Enter text to decode?',
+            when: function (answers) {
+                return answers.actionType == 'decode'
             }
         },
         {
@@ -31,5 +47,5 @@ inquirer
         
         // console.log(crypto);
 
-        // console.log('end: ', answers);
+        console.log('end: ', answers);
     });

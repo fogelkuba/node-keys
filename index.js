@@ -14,11 +14,13 @@ inquirer
             name: 'textToCode',
             message: 'What text do you wanto to code?',
             when: (answers) => {
-                answers.actionType === 'code'
+                console.log(answers);
+                
+                // answers.actionType === 'code'
             }
         }
 
-    ])
+    ]
     .then(answers => {
         // Use user feedback for... whatever!!
         // console.log(answers);

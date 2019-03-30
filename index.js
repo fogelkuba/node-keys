@@ -13,9 +13,9 @@ inquirer
             type: 'input',
             name: 'textToCode',
             message: 'What text do you wanto to code?',
-            // when: () => {
-            //     this.actionType === 'code'
-            // }
+            when: (answers) => {
+                answers.actionType === 'code'
+            }
         }
 
     ])

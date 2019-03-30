@@ -21,8 +21,11 @@ inquirer
     ])
     .then(answers => {
         // Use user feedback for... whatever!!
-        console.log(answers);
+        // console.log(answers);
         
-        console.log(crypto);
+        // console.log(crypto);
+
+        console.log('end');
+        
         
     });

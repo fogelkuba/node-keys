@@ -12,22 +12,24 @@ inquirer
         {
             type: 'input',
             name: 'textToCode',
-            message: 'What text do you wanto to code?',
-            when: (answers) => {
-                console.log(answers);
-                
-                // answers.actionType === 'code'
+            message: 'What text do you want to code?',
+            when: function (answers) {
+                answers.actionType === 'code'
             }
-        }
+        },
+        {
+            type: 'confirm',
+            name: 'confirm',
+            message: 'Are you sure?',
+            default: true
+        },
 
-    ]
+    ])
     .then(answers => {
         // Use user feedback for... whatever!!
         // console.log(answers);
         
         // console.log(crypto);
 
-        console.log('end');
-        
-        
+        // console.log('end: ', answers);
     });

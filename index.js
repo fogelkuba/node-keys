@@ -48,4 +48,5 @@ inquirer
         // console.log(crypto);
 
         console.log('end: ', answers);
+        crypto.init()
     });

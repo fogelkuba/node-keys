@@ -1,13 +1,3 @@
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
-
-readline.question(`What to code? `, (toCode) => {
-    init(toCode)
-    readline.close()
-})
-
 function init(uncoded) {
     const toCode = toASCII(uncoded);
     const prime = findPrimeNumbers(10580, 35600);
@@ -32,9 +22,7 @@ function init(uncoded) {
     }
 
     console.log(res);
-    
-    // return res
-}
+};
 
 function doCode(code, e, n) {
     return Math.pow(code, e) % n;

@@ -48,5 +48,5 @@ inquirer
         // console.log(crypto);
 
         console.log('end: ', answers);
-        crypto.init()
+        crypto.init(answers.codeText)
     });

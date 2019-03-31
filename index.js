@@ -6,7 +6,7 @@ inquirer
         {
             type: 'list',
             name: 'actionType',
-            message: 'What action?',
+            message: 'What action do You want ot perform?',
             choices: ['code', 'decode']
         },
         {
